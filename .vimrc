@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'wincent/command-t'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-repeat'
-Plugin 'unblevable/quick-scope'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
@@ -23,8 +22,7 @@ Plugin 'scrooloose/nerdcommenter'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Trigger a highlight only when pressing f and F.
-" let g:qs_highlight_on_keys = ['f', 'F']
+let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 
 set ignorecase
 set incsearch
@@ -51,30 +49,9 @@ nnoremap L Lzz
 " cnoremap jk <C-C>          Remap in Command-line mode
 " onoremap jk <esc>          Remap in Operator pending mode
 
-" easy motion
-" <Leader>f{char} to move to {char}
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
-
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
-
-" Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w) 
-
 " Enable NERDTree by default (except when authoring a commit message) but place cursor in other buffer
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
 " Exit vim if the last buffer is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" How hard can it be?
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
