@@ -3,19 +3,7 @@
     "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange",
     "explorer.confirmDragAndDrop": false,
-    "line-counter.excludes": [
-        "**/.vscode/**",
-        "**/build/**",
-        "**/dist/**",
-        "**/mysql/**",
-        "**/nbproject/**"
-    ],
-    "line-counter.includes": [
-        "**/src/*"
-    ],
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "csharpfixformat.style.spaces.beforeParenthesis": false,
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -26,8 +14,6 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
-    "github.username": "chaiwatmat",
-    "csharpfixformat.style.braces.onSameLine": false,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -36,9 +22,6 @@
         "javascript": "javascriptreact"
     },
     "redhat.telemetry.enabled": false,
-    "auto-rename-tag.activationOnLanguage": [
-        "*"
-    ],
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "[javascriptreact]": {
