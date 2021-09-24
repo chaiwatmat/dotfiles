@@ -1,0 +1,110 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "explorer.confirmDragAndDrop": false,
+    "line-counter.excludes": [
+        "**/.vscode/**",
+        "**/build/**",
+        "**/dist/**",
+        "**/mysql/**",
+        "**/nbproject/**"
+    ],
+    "line-counter.includes": [
+        "**/src/*"
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "csharpfixformat.style.spaces.beforeParenthesis": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "explorer.confirmDelete": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "github.username": "chaiwatmat",
+    "csharpfixformat.style.braces.onSameLine": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "javascript": "javascriptreact"
+    },
+    "redhat.telemetry.enabled": false,
+    "auto-rename-tag.activationOnLanguage": [
+        "*"
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 12,
+    "vim.timeout": 300,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [ "<Space>", "s" ],
+            "after": [ "<leader>", "<leader>", "2", "s" ]
+        },
+        {
+            "before": [ "<Space>", "S" ],
+            "after": [ "<leader>", "<leader>", "2", "S" ]
+        },
+        {
+            "before": [ "<Space>", "f" ],
+            "after": [ "<leader>", "<leader>", "2", "f" ]
+        },
+        {
+            "before": [ "<Space>", "F" ],
+            "after": [ "<leader>", "<leader>", "2", "F" ]
+        },
+        {
+            "before": [ "L" ],
+            "after": [ "L", "z", "z" ]
+        },
+        {
+            "before": [ "H" ],
+            "after": [ "H", "z", "z" ]
+        },
+        {
+            "before": [ "<Tab>" ],
+            "commands": [ "workbench.action.nextEditor" ]
+        },
+        {
+            "before": [ "<S-Tab>" ],
+            "commands": [ "workbench.action.previousEditor" ]
+        },
+        {
+            "before": [ "leader", "q" ],
+            "commands": [ "workbench.action.closeAllEditors" ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [ "j", "k" ],
+            "after": [ "<Esc>" ]
+        },
+        {
+            "before": [ "่", "า" ],
+            "after": [ "<Esc>" ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [ "j", "k" ],
+            "after": [ "<Esc>" ]
+        },
+    ],
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "editor.lineNumbers": "relative",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "csharp.testsCodeLens.enabled": false,
+    "omnisharp.autoStart": false,
+    "razor.format.enable": false,
+    "vim.easymotion": true
+}
