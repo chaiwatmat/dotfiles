@@ -6,7 +6,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'wincent/command-t'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdtree'
@@ -33,13 +32,14 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 set relativenumber
-" set timeoutlen=300
 
 inoremap jk <Esc>
 vnoremap jk <Esc>
 cnoremap jk <C-C>
 nnoremap H Hzz
 nnoremap L Lzz
+
+nmap s <Plug>(easymotion-s2)
 
 " nnoremap jk <esc>          Remap in Normal mode
 " inoremap jk <esc>          Remap in Insert and Replace mode
