@@ -35,10 +35,6 @@
             "after": [ "<leader>", "<leader>", "2", "s" ]
         },
         {
-            "before": [ "<Space>", "S" ],
-            "after": [ "<leader>", "<leader>", "2", "S" ]
-        },
-        {
             "before": [ "<Space>", "f" ],
             "after": [ "<leader>", "<leader>", "2", "f" ]
         },
