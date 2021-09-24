@@ -39,6 +39,7 @@ cnoremap jk <C-C>
 nnoremap H Hzz
 nnoremap L Lzz
 
+let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-s2)
 
 " nnoremap jk <esc>          Remap in Normal mode
