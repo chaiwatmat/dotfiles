@@ -21,8 +21,6 @@ Plugin 'scrooloose/nerdcommenter'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
-
 set ignorecase
 set incsearch
 set hlsearch
@@ -38,8 +36,16 @@ vnoremap jk <Esc>
 cnoremap jk <C-C>
 nnoremap H Hzz
 nnoremap L Lzz
+nnoremap <C-N> :noh<CR>
+nnoremap <C-E> :NERDTreeToggle<CR>
 
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1
+let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
+
+nmap <Space>f <Plug>(easymotion-f2)
+nmap <Space>F <Plug>(easymotion-F2)
 nmap s <Plug>(easymotion-s2)
 
 " nnoremap jk <esc>          Remap in Normal mode
@@ -51,8 +57,8 @@ nmap s <Plug>(easymotion-s2)
 " onoremap jk <esc>          Remap in Operator pending mode
 
 " Enable NERDTree by default (except when authoring a commit message) but place cursor in other buffer
-autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
+" autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
 " Exit vim if the last buffer is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
