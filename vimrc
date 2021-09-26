@@ -44,9 +44,9 @@ let g:EasyMotion_smartcase = 1
 let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
 
+nmap s <Plug>(easymotion-s2)
 nmap <Space>f <Plug>(easymotion-f2)
 nmap <Space>F <Plug>(easymotion-F2)
-nmap s <Plug>(easymotion-s2)
 
 " nnoremap jk <esc>          Remap in Normal mode
 " inoremap jk <esc>          Remap in Insert and Replace mode
