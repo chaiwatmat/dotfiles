@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 syntax enable
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -18,8 +18,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()
+filetype plugin indent on
 
 set ignorecase
 set incsearch
@@ -29,14 +29,14 @@ set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
-set relativenumber
+set relativenumber number
 
 inoremap jk <Esc>
 vnoremap jk <Esc>
 cnoremap jk <C-C>
 nnoremap H Hzz
 nnoremap L Lzz
-nnoremap <C-N> :noh<CR>
+nnoremap hl :noh<CR>
 nnoremap <C-E> :NERDTreeToggle<CR>
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
