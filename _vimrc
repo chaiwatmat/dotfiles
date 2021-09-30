@@ -10,7 +10,6 @@ set relativenumber number
 
 " Xaml
 au BufNewFile,BufRead *.xaml setf xml
-au BufNewFile,BufRead Jenkinsfile setf groovy
 au BufNewFile,BufRead Jenkinsfile* setf groovy
 
 inoremap jk <ESC>
@@ -46,3 +45,8 @@ nnoremap <Space>tc :vsc ReSharper.ReSharper_CoverTestsInCurrentContext<CR>
 " F10 => step over
 " F11 => step into
 " https://vimhelp.org/pattern.txt.html
+
+" nmap <space> gd <Plug>(coc-definition)
+" nmap <space> gy <Plug>(coc-type-definition)
+" nmap <space> gi <Plug>(coc-implementation)
+" nmap <space> gr <Plug>(coc-references)
