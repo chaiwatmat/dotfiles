@@ -77,7 +77,7 @@
         {
             "before": [ "j", "k" ],
             "after": [ "<Esc>" ]
-        },
+        }
     ],
     "vim.sneakUseIgnorecaseAndSmartcase": true,
     "editor.lineNumbers": "relative",
