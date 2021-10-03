@@ -22,7 +22,6 @@
         "javascript": "javascriptreact"
     },
     "redhat.telemetry.enabled": false,
-    "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -30,53 +29,109 @@
     "editor.fontSize": 12,
     "vim.timeout": 300,
     "vim.normalModeKeyBindings": [
+        // {
+        //     "before": [ "s" ],
+        //     "after": [ "<leader>", "<leader>", "2", "s" ]
+        // },
         {
-            "before": [ "s" ],
-            "after": [ "<leader>", "<leader>", "2", "s" ]
+            "before": [
+                "<Space>",
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "2",
+                "f"
+            ]
         },
         {
-            "before": [ "<Space>", "f" ],
-            "after": [ "<leader>", "<leader>", "2", "f" ]
+            "before": [
+                "<Space>",
+                "F"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "2",
+                "F"
+            ]
         },
         {
-            "before": [ "<Space>", "F" ],
-            "after": [ "<leader>", "<leader>", "2", "F" ]
+            "before": [
+                "L"
+            ],
+            "after": [
+                "L",
+                "z",
+                "z"
+            ]
         },
         {
-            "before": [ "L" ],
-            "after": [ "L", "z", "z" ]
+            "before": [
+                "H"
+            ],
+            "after": [
+                "H",
+                "z",
+                "z"
+            ]
         },
         {
-            "before": [ "H" ],
-            "after": [ "H", "z", "z" ]
+            "before": [
+                "<Tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
         },
         {
-            "before": [ "<Tab>" ],
-            "commands": [ "workbench.action.nextEditor" ]
+            "before": [
+                "<S-Tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
         },
         {
-            "before": [ "<S-Tab>" ],
-            "commands": [ "workbench.action.previousEditor" ]
-        },
-        {
-            "before": [ "leader", "q" ],
-            "commands": [ "workbench.action.closeAllEditors" ]
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeAllEditors"
+            ]
         }
     ],
     "vim.insertModeKeyBindings": [
         {
-            "before": [ "j", "k" ],
-            "after": [ "<Esc>" ]
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         },
         {
-            "before": [ "่", "า" ],
-            "after": [ "<Esc>" ]
+            "before": [
+                "่",
+                "า"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": [ "j", "k" ],
-            "after": [ "<Esc>" ]
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.sneakUseIgnorecaseAndSmartcase": true,
@@ -84,6 +139,12 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "csharp.testsCodeLens.enabled": false,
     "omnisharp.autoStart": false,
-    "razor.format.enable": false,
-    "vim.easymotion": true
+    "vim.easymotion": true,
+    "omnisharp.organizeImportsOnFormat": true,
+    "editor.formatOnPaste": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.wordWrap": "on",
+    "security.workspace.trust.banner": "never",
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true
 }
