@@ -1,0 +1,40 @@
+Plug 'justinmk/vim-sneak'
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-surround'
+
+set ignorecase
+set incsearch
+set hlsearch
+set foldmethod=syntax 
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+set relativenumber number
+
+inoremap jk <Esc>
+vnoremap jk <Esc>
+cnoremap jk <C-C>
+
+nnoremap H Hzz
+nnoremap L Lzz
+nnoremap g0 1gt
+nnoremap g9 1gtgT
+
+# redu
+nnoremap U <C-r>
+# clear line
+nnoremap d; d0d$
+
+nnoremap hl :set hlsearch!<CR>
+nnoremap ,c :action GotoClass<CR>
+nnoremap <Space>q :q<CR>
+nnoremap gd :action GotoImplementation<CR>
+
+nnoremap rr :action Run<CR>
+nnoremap rs :action Stop<CR>
+nnoremap <Space>nd :action NewDir<CR>
+nnoremap <Space>nc :action NewClass<CR>
+
+nnoremap gb :action Back<CR>
+nnoremap gf : action Forward<CR>
+

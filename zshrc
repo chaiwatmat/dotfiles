@@ -103,3 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/sbin:$PATH"
+alias python=/usr/bin/python3
+alias pip=/usr/local/bin/pip3
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+alias lg='lazygit'

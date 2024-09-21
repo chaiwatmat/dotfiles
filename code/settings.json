@@ -15,7 +15,7 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.enabled": false,
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "emmet.includeLanguages": {
         "vue-html": "html",
@@ -137,7 +137,6 @@
     "vim.sneakUseIgnorecaseAndSmartcase": true,
     "editor.lineNumbers": "relative",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "csharp.testsCodeLens.enabled": false,
     "omnisharp.autoStart": false,
     "vim.easymotion": true,
     "omnisharp.organizeImportsOnFormat": true,
@@ -146,5 +145,13 @@
     "editor.wordWrap": "on",
     "security.workspace.trust.banner": "never",
     "vim.sneak": true,
-    "vim.sneakReplacesF": true
+    "vim.sneakReplacesF": true,
+    "dotnet.codeLens.enableTestsCodeLens": false,
+    "files.associations": {
+        "*.dat": "csv (pipe)",
+        "*.csv": "csv (semicolon)"
+    },
+    "workbench.editorAssociations": {
+        "*.csv": "default"
+    },
 }
