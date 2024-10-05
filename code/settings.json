@@ -29,10 +29,6 @@
     "editor.fontSize": 12,
     "vim.timeout": 300,
     "vim.normalModeKeyBindings": [
-        // {
-        //     "before": [ "s" ],
-        //     "after": [ "<leader>", "<leader>", "2", "s" ]
-        // },
         {
             "before": [
                 "<Space>",
@@ -154,4 +150,6 @@
     "workbench.editorAssociations": {
         "*.csv": "default"
     },
+    "vim.replaceWithRegister": true,
+    "vim.hlsearch": true,
 }
