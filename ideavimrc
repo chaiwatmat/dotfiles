@@ -36,5 +36,5 @@ nnoremap <Space>nd :action NewDir<CR>
 nnoremap <Space>nc :action NewClass<CR>
 
 nnoremap gb :action Back<CR>
-nnoremap gf : action Forward<CR>
+nnoremap gf :action Forward<CR>
 
