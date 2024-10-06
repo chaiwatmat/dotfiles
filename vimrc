@@ -34,6 +34,7 @@ set relativenumber number
 inoremap jk <Esc>
 vnoremap jk <Esc>
 cnoremap jk <C-C>
+
 nnoremap H Hzz
 nnoremap L Lzz
 nnoremap hl :noh<CR>
@@ -47,6 +48,14 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
 nmap s <Plug>(easymotion-s2)
 nmap <Space>f <Plug>(easymotion-f2)
 nmap <Space>F <Plug>(easymotion-F2)
+
+" nmap - works recursively in normal mode.
+" imap - works recursively in insert mode.
+" vmap - works recursively in visual and select modes.
+" xmap - works recursively in visual mode.
+" smap - works recursively in select mode.
+" cmap - works recursively in command-line mode.
+" omap - works recursively in operator pending mode.
 
 " nnoremap jk <esc>          Remap in Normal mode
 " inoremap jk <esc>          Remap in Insert and Replace mode
